@@ -15,7 +15,10 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root to: redirect('/quizzes')
-  
-  resources :quizzes
 
+  resources :quizzes
+  
+  # resources :quizzes, shalow: true do
+  #   resources: questions, only: [:new, :create, :edit, :update, :destroy]
+  # end
 end
