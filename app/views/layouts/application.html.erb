@@ -19,10 +19,16 @@
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+    <main>
     <%= yield %>
+    <main>
   </body>
 </html>
