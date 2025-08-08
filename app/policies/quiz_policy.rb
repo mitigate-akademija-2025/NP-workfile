@@ -1,4 +1,4 @@
-class ProductPolicy
+class QuizPolicy
     attr_reader :user, :quiz
 
     def initialize(user, quiz)
