@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   resources :quizzes
   
-  # resources :quizzes, shalow: true do
+  #   resources :quizzes, shalow: true do
   #   resources: questions, only: [:new, :create, :edit, :update, :destroy]
   # end
 end
